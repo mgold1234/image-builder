@@ -673,8 +673,9 @@ type ObjectReference struct {
 
 // OpenSCAP defines model for OpenSCAP.
 type OpenSCAP struct {
-	ProfileId string             `json:"profile_id"`
-	Tailoring *OpenSCAPTailoring `json:"tailoring,omitempty"`
+	ProfileId   string             `json:"profile_id"`
+	ProfileName *string            `json:"profile_name,omitempty"`
+	Tailoring   *OpenSCAPTailoring `json:"tailoring,omitempty"`
 }
 
 // OpenSCAPTailoring defines model for OpenSCAPTailoring.

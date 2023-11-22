@@ -894,6 +894,8 @@ components:
       properties:
         profile_id:
           type: string
+        profile_name:
+          type: string
         tailoring:
           $ref: '#/components/schemas/OpenSCAPTailoring'
     OpenSCAPTailoring:
@@ -901,11 +903,11 @@ components:
       properties:
         selected:
           type: array
-          items: 
+          items:
             type: string
         unselected:
           type: array
-          items: 
+          items:
             type: string
     UploadOptions:
       anyOf:

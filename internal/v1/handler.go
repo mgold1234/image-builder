@@ -1033,7 +1033,8 @@ func buildCustomizations(cust *Customizations) *composer.Customizations {
 
 	if cust.Openscap != nil {
 		res.Openscap = &composer.OpenSCAP{
-			ProfileId: cust.Openscap.ProfileId,
+			ProfileId:   cust.Openscap.ProfileId,
+			ProfileName: cust.Openscap.ProfileName,
 		}
 	}
 

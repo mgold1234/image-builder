@@ -1167,6 +1167,9 @@ components:
         profile_id:
           type: string
           example: "xccdf_org.ssgproject.content_profile_cis"
+        profile_name:
+          type: string
+          example: "content_profile_cis"
     ClonesResponse:
       required:
         - meta
